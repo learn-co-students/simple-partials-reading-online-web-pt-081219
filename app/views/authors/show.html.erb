@@ -1,2 +1,6 @@
-<%= @author.name %>
-<%= @author.hometown %>
+<%# <%= @author.name %>
+<%# <%= @author.hometown %>
+
+<%# #both the author show page and the posts show page have the above line. so i made a  %>
+<%# _authors partial page to put this above line. thats why we render that page  %>
+<%= render 'author' %>

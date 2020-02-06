@@ -1,5 +1,11 @@
-<%= @post.author.name %>
-<%= @post.author.hometown %>
+
+<%# <%= @author.name %>
+<%# <%= @author.hometown %> 
+ <%# above is in author partial page  %>
+
+<%# below we are explicitly tellings rails to leave this posts view and go to AUTHORS view for _AUTHOR partial %>
+<%# also dont forget to add the @author instance variable in the posts controller method of show %>
+<%= render 'authors/author' %>
 
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
